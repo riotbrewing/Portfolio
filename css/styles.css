@@ -12,14 +12,11 @@ body{
     padding: 1rem 3rem;
     color: var(--clr-white-100);
     font-family: var(--ff-primary, sans-serif);
+    bottom: 0;
 }
 
 #nav_logo{
     margin-right: auto;
-}
-
-.header_container_home ul{
-
 }
 
 .header_container_home ul li{
@@ -39,4 +36,56 @@ body{
     width: 3rem;
 }
 
+.hero_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_header{
+    display: grid;
+    margin: 1rem;
+    color: var(--clr-white-100);
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_header h1{
+    color: var(--clr-white-100);
+    place-self: center;
+    font-family: var(--ff-primary, sans-serif);
+}
+
+.intro_text{
+    color: var(--clr-white-100);
+    display: grid;
+    margin: 1rem;
+    font-family: var(--ff-primary, sans-serif);
+
+}
+.intro_content{
+    place-self: center;
+    max-width: 30rem;
+}
+
+.intro_text button{
+    place-self: center;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    background-color: var(--clr-grey-200);
+    opacity: .5;
+    transition: 1s;
+    color: var(--clr-white-100);
+}
+
+.intro_text button:hover{
+    opacity: 1;
+}
+
+.hero_image img
+{
+    border-radius: 360px;
+    height: 25rem;
+    margin: 4rem;
+}
 
