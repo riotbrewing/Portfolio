@@ -4,4 +4,5 @@ button_one.addEventListener('click',onclick);
 
 function onclick(){
     console.log("clicked");
+    location.replace('projects.html');
 }

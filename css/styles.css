@@ -6,47 +6,60 @@
 
 
 .header_container_home{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns:3rem auto;
+    grid-template-areas:
+        "logo" "nav";
     color: var(--clr-white-100);
     font-family: var(--ff-primary, sans-serif);
-    bottom: 0;
     background-color: var(--clr-grey-200);
     opacity: .5;
+    margin-right: .125rem;
 }
 
 #nav_logo{
-    margin-right: auto;
+    align-self: start;
+    grid-area: logo;
     opacity: 1;
+    margin: .5rem;
 }
 
-.header_container_home ul li{
+.navbox {
+    display: grid;
+    place-items: center;
+    place-content: end;
+}
+
+.navbox ul {
     list-style: none;
-    display: inline-block;
-    margin: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns:repeat(4, 5rem);
+    place-content: end;
+    gap: 1rem;
+}
+
+.navbox ul li{
+    list-style: none;
+    place-self: center;
     opacity: 1;
 }
 
-.header_container_home ul li a{
+.navbox ul li a{
+    place-self: center;
     text-decoration: none;
     font-size: var(--fs-400);
-    position: relative;
-    top: 0;
-    transition-duration: top ease 1s;
-    opacity: 1;
+    transition-duration: 1s;
+
 }
-.header_container_home ul li a:hover{
-    top: -5px;
-    right: 5px;
+.navbox ul li a:hover{
+
     color: var(--clr-green-100)
 }
 
-.header_container_home img
+.navbox img
 {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .hero_image{
