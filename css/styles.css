@@ -1,18 +1,24 @@
-.hero_image_home{
-    height: 45rem;
-    width: 40rem;
+.home_page{
+    display: grid;
+    grid-template-areas:
+        "top"
+        "bottom";
+    grid-template-rows: 5rem 37.5rem;
 }
 
 .hero_container_home{
     display: grid;
     grid-template-areas:
         "hero-text hero-image";
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr auto;
     grid-template-rows:auto;
     justify-items: center;
     font-family: var(--ff-primary), sans-serif;
     color: var(--clr-white-100);
-    margin: 1rem 6rem 1rem 6rem;
+    grid-area: bottom;
+    background-color: var(--clr-grey-100);
+    margin-top: 8rem;
+    height: 37.5rem;
 }
 
 .hero_container_home h3{
@@ -38,6 +44,9 @@
     grid-area: hero-text;
     text-align: left;
     place-content: center;
+    padding-left: 1rem;
+    width: 40rem;
+
 }
 
 .hero_text_container_home button{
@@ -57,9 +66,50 @@
 .hero_image_container_home{
     grid-area: hero-image;
     justify-content: center;
+    margin-right: 2rem;
 }
 
 .home_page{
     background-image: linear-gradient(to bottom, var(--clr-grey-500), var(--clr-grey-400));
 
 }
+
+.navbar_container_home{
+    display: grid;
+    grid-template-areas:
+    "logo nav";
+    grid-template-columns:5rem auto;
+    grid-area: top;
+
+}
+
+.navbar_container_home img{
+    height: 2rem;
+    width: 2rem;
+    grid-area: logo;
+    justify-self: center;
+    margin: 1rem;
+}
+
+.navbar_container_home ul{
+    list-style-type: none;
+    grid-area: navbar;
+}
+
+.navbar_container_home ul li{
+    float: right;
+    font-family: var(--ff-primary), sans-serif;
+}
+
+.navbar_container_home ul li a{
+    display: block;
+    color: var(--clr-white-100);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+.navbar_container_home ul li a:hover{
+    background-color: var(--clr-grey-300);
+    transition-duration: .5s;
+}
+
