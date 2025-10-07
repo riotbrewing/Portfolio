@@ -1,5 +1,6 @@
 /* Import the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 /* set custom colors and font presets */
 :root{
@@ -17,12 +18,80 @@
     --clr-red-400: #240101;
     --clr-red-500: #140101;
 
+    /* oranges */
+    --clr-orange-100: #AD4B09;
+    --clr-orange-200: #913F07;
+    --clr-orange-300: #753206;
+    --clr-orange-400: #471F04;
+    --clr-orange-500: #291202;
+
+    /* yellows */
+    --clr-yellow-100: #CCC12D;
+    --clr-yellow-200: #A69D24;
+    --clr-yellow-300: #857D1D;
+    --clr-yellow-400: #5E5915;
+    --clr-yellow-500: #242208;
+
+    /* green */
+    --clr-green-100: #3B9915;
+    --clr-green-200: #318012;
+    --clr-green-300: #27660E;
+    --clr-green-400: #1B470A;
+    --clr-green-500: #0E2405;
+
+    /* light blues*/
+    --clr-lightblue-100: #22B3A9;
+    --clr-lightblue-200: #1B968E;
+    --clr-lightblue-300: #15756F;
+    --clr-lightblue-400: #0E4D48;
+    --clr-lightblue-500: #072927;
+
     /* blues */
     --clr-blue-100: #081B70;
     --clr-blue-200: #051352;
     --clr-blue-300: #040E3D;
     --clr-blue-400: #020a2b;
     --clr-blue-500: #01061c;
+
+    /* purples */
+    --clr-purple-100: #8C23A1;
+    --clr-purple-200: #731d85;
+    --clr-purple-300: #561563;
+    --clr-purple-400: #3E0F47;
+    --clr-purple-500: #230929;
+
+    /* pinks */
+    --clr-pink-100: #E002D9;
+    --clr-pink-200: #CF02C8;
+    --clr-pink-300: #BA00B4;
+    --clr-pink-400: #A802A3;
+    --clr-pink-500: #94008F;
+
+    /* whites */
+    --clr-white-100: #F2F2EB;
+    --clr-white-200: #E3E3DA;
+
+    /* font weights */
+    --fw-extra-small: 100;
+    --fw-small: 200;
+    --fw-medium: 300;
+    --fw-normal: 400;
+    --fw-medium-large: 500;
+    --fw-large: 600;
+    --fw-extra-large: 700;
+
+    /*font sizes*/
+    --fs-300: .875rem;
+    --fs-400: 1rem;
+    --fs-500: 1.5rem;
+    --fs-600: 2rem;
+    --fs-700: 2.25rem;
+    --fs-800: 3rem;
+    --fs-900: 3.5rem;
+
+    /* font families */
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-secondary: 'Zain', sans-serif;
 }
 
 /* Box sizing rules */
