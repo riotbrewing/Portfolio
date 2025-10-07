@@ -2,3 +2,29 @@
     height: 30rem;
     width: 30rem;
 }
+
+.hero_container_home{
+    display: grid;
+    grid-template-areas:
+        "hero-text hero-image";
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:auto;
+    justify-items: center;
+}
+
+.navbar_container_home{
+    display: grid;
+    grid-area: navbar;
+}
+
+.hero_text_container_home{
+    grid-area: hero-text;
+    text-align: center;
+    place-content: center;
+}
+
+.hero_image_container_home{
+    grid-area: hero-image;
+    justify-content: center;
+}
+
