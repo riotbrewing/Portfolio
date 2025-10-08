@@ -1,9 +1,9 @@
+/*  home page and navbar*/
 .home_body{
     height:100vh;
     background-image: url("../images/background_1.jpg");
     backdrop-filter: blur(3px);
 }
-
 
 .header_container_home{
     display: grid;
@@ -14,7 +14,7 @@
     font-family: var(--ff-primary, sans-serif);
     background-color: var(--clr-grey-200);
     opacity: .5;
-    margin-right: .125rem;
+    margin-right: 0;
 }
 
 #nav_logo{
@@ -28,6 +28,7 @@
     display: grid;
     place-items: center;
     place-content: end;
+    margin: 0;
 }
 
 .navbox ul {
@@ -115,3 +116,12 @@
     margin: 4rem;
 }
 
+/*  About Page*/
+.about_body{
+    margin: 5rem 20rem
+
+}
+
+.about_body hr{
+
+}
